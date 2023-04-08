@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    letter-spacing: 0.75rem;
+    font-weight: 700;
+}

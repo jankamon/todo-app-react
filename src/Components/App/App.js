@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer';
 
 export default function App() {
   return (
-    <>
+    <div id="container">
       <Header />
         <main>
           <AddTodoForm />
@@ -16,6 +16,6 @@ export default function App() {
           <TodosOptions />
         </main>
       <Footer />
-    </>
+    </div>
   )
 }
