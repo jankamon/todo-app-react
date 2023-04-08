@@ -1,0 +1,25 @@
+input {
+    font-family: inherit;
+    font-weight: 400;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 60px;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+input.dark-theme {
+    color: inherit;
+    background-color: hsl(235, 24%, 19%);
+}
+
+input.light-theme {
+    color: hsl(235, 19%, 35%);
+    background-color: hsl(0, 0%, 98%);
+}
