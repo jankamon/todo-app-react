@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: hsl(235, 21%, 11%);
-  color: hsl(234, 39%, 85%);
+  color: hsl(0, 0%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
