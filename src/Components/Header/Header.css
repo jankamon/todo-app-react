@@ -24,9 +24,9 @@ span {
 }
 
 span.light-theme  {
-    background-image: url('./images/icon-sun.svg');
+    background-image: url('./images/icon-moon.svg');
 }
 
 span.dark-theme {
-    background-image: url('./images/icon-moon.svg');
+    background-image: url('./images/icon-sun.svg');
 }
