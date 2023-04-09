@@ -4,11 +4,9 @@ import './App.css';
 // Components
 import Header from '../Header/Header';
 import AddTodoForm from '../AddTodoForm/AddTodoForm';
-import TodosList from '../TodosList/TodosList';
+import Todos from '../Todos/Todos';
 import TodosOptions from '../TodosOptions/TodosOptions';
 import Footer from '../Footer/Footer';
-// Functions
-import { useTheme } from '../../ThemeContext';
 import { ThemeProvider } from '../../ThemeContext';
 
 export default function App() {
@@ -17,11 +15,11 @@ export default function App() {
     <ThemeProvider>
       <div id="container">
         <Header />
-          <main>
-            <AddTodoForm />
-            <TodosList />
-            <TodosOptions />
-          </main>
+        <main>
+          <AddTodoForm />
+          <Todos />
+          <TodosOptions />
+        </main>
         <Footer />
       </div>
     </ThemeProvider>

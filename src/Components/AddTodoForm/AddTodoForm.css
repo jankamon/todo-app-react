@@ -1,6 +1,5 @@
 form {
     display: flex;
-
 }
 
 input {
@@ -44,18 +43,16 @@ label {
 }
 
 label.dark-theme {
-    color: inherit;
     background-color: hsl(235, 24%, 19%);
 }
 
 label.light-theme {
-    color: hsl(235, 19%, 35%);
     background-color: hsl(0, 0%, 98%);
 }
 
-.circle {
-    height: 1.25rem;
-    width: 1.25rem;
+span.circle {
+    height: 1rem;
+    width: 1rem;
     border: 2px solid #bbb;
     border-radius: 50%;
   }

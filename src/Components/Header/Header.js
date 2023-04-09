@@ -6,13 +6,14 @@ export default function Header() {
   const toggleTheme = useThemeUpdate();
   const themeStyle = useTheme();
   
+  // Toggle body class
   useEffect(() => {
     if(themeStyle === 'light-theme') {
-      document.body.style.backgroundColor = "hsl(236, 33%, 92%)";
-      document.body.style.color = "hsl(235, 19%, 35%)";
+      document.body.classList.add('light-theme');
+      document.body.classList.remove('dark-theme');
     } else {
-      document.body.style.backgroundColor = "hsl(235, 21%, 11%)";
-      document.body.style.color = "hsl(0, 0%, 98%)";
+      document.body.classList.add('dark-theme');
+      document.body.classList.remove('light-theme');
     }
 
   }, [themeStyle]);

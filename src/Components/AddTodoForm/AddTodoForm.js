@@ -13,7 +13,7 @@ export default function AddTodoForm() {
   return (
     <form onSubmit={handleSubmit}>
       {/* add span with circle */}
-      <label className={themeStyle} for="input">
+      <label className={themeStyle} htmlFor="input">
         <span className="circle"></span>
       </label>
       <input className={themeStyle} type="text" name="input" placeholder='Create a new todo...'></input>
