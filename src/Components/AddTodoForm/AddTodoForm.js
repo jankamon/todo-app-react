@@ -7,11 +7,12 @@ export default function AddTodoForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
   }
 
   return (
     <form onSubmit={handleSubmit}>
+      {/* add span with circle */}
       <input className={themeStyle} type="text" placeholder='Create a new todo...'></input>
     </form>
   )

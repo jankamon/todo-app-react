@@ -7,7 +7,7 @@ body {
   align-items: center;
 }
 
-body.dark-theme {
+/* body.dark-theme {
   background-color: hsl(235, 21%, 11%);
   color: hsl(0, 0%, 98%);
 }
@@ -15,7 +15,7 @@ body.dark-theme {
 body.light-theme {
   background-color: hsl(236, 33%, 92%);
   color: hsl(235, 19%, 35%);
-}
+} */
 
 #container {
   width: 500px;
