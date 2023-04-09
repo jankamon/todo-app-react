@@ -20,7 +20,7 @@ input:focus {
 }
 
 input.dark-theme {
-    color: hsl(0, 0%, 98%);
+    color: hsl(234, 39%, 85%);
     background-color: hsl(235, 24%, 19%);
 }
 
