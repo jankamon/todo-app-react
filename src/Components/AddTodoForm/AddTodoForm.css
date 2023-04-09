@@ -20,7 +20,7 @@ input:focus {
 }
 
 input.dark-theme {
-    color: inherit;
+    color: hsl(0, 0%, 98%);
     background-color: hsl(235, 24%, 19%);
 }
 
@@ -40,6 +40,8 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 label.dark-theme {
@@ -55,4 +57,4 @@ span.circle {
     width: 1rem;
     border: 2px solid #bbb;
     border-radius: 50%;
-  }
+}
