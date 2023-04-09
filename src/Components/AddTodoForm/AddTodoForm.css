@@ -55,6 +55,6 @@ label.light-theme {
 span.circle {
     height: 1rem;
     width: 1rem;
-    border: 2px solid #bbb;
+    border: 2px solid hsl(235, 19%, 35%);
     border-radius: 50%;
 }

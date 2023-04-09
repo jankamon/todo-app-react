@@ -9,11 +9,11 @@ export default function TodosOptions() {
     <div id='todos-options' className={themeStyle}>
       <div id='items-left'>5 items left</div>
       <div id='filter-options'>
-        <div>All</div>
-        <div>Active</div>
-        <div>Completed</div>
+        <div className={themeStyle} id='all'>All</div>
+        <div className={themeStyle} id='active'>Active</div>
+        <div className={themeStyle} id='completed'>Completed</div>
       </div>
-      <div id='clear-completed'>Clear Completed</div>
+      <div className={themeStyle} id='clear-completed'>Clear Completed</div>
     </div>
   )
 }

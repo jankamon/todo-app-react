@@ -18,6 +18,16 @@ div#todos-options.dark-theme {
     background-color: hsl(235, 24%, 19%);
 }
 
+div#todos-options.light-theme {
+    color: hsl(234, 11%, 52%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+div#items-left {
+    cursor: default;
+}
+
+
 div#filter-options {
     display: flex;
     box-sizing: border-box;
@@ -27,3 +37,34 @@ div#filter-options {
     margin-left: 5%;
 }
 
+#all, #active, #completed, #clear-completed {
+    cursor: pointer;
+}
+
+div#all.dark-theme, 
+div#active.dark-theme, 
+div#completed.dark-theme,
+div#clear-completed.dark-theme {
+    color: inherit;
+}
+
+div#all.dark-theme:hover, 
+div#active.dark-theme:hover, 
+div#completed.dark-theme:hover,
+div#clear-completed.dark-theme:hover {
+    color: hsl(236, 33%, 92%);
+}
+
+div#all.light-theme, 
+div#active.light-theme, 
+div#completed.light-theme,
+div#clear-completed.light-theme {
+    color: inherit;
+}
+
+div#all.light-theme:hover, 
+div#active.light-theme:hover, 
+div#completed.light-theme:hover,
+div#clear-completed.light-theme:hover {
+    color: hsl(235, 19%, 35%);
+}

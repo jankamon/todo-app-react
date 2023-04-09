@@ -1,0 +1,13 @@
+div#footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+div.dark-theme {
+    color: hsl(234, 39%, 85%);
+}
+
+div.light-theme {
+    color: hsl(235, 19%, 35%);
+}

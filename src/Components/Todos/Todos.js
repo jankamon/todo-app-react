@@ -7,9 +7,14 @@ export default function TodosList() {
   
   return (
     <ul>
-      <li className={themeStyle}><span className="circle todo-button"></span><span className='todo-text'>Todo item</span><span className="remove-button"></span></li>
-      <li className={themeStyle}><span className="circle todo-button"></span><span className='todo-text'>Todo item</span><span className="remove-button"></span></li>
-      <li className={themeStyle}><span className="circle todo-button"></span><span className='todo-text'>Todo item</span><span className="remove-button"></span></li>
+      <li className={themeStyle}>
+        <span className="circle todo-button" >
+          <span className='inner-circle'>
+          </span>
+        </span>
+        <span className='todo-text'>Todo item</span>
+        <span className="remove-button"></span>
+      </li>
     </ul>
   )
 }
