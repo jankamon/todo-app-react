@@ -1,23 +1,51 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 // Styles
 import './App.css';
 // Components
 import Header from '../Header/Header';
 import AddTodoForm from '../AddTodoForm/AddTodoForm';
-import Todos from '../Todos/Todos';
+import TodoList from '../TodoList/TodoList';
 import TodosOptions from '../TodosOptions/TodosOptions';
 import Footer from '../Footer/Footer';
+import uuid from 'react-uuid';
 import { ThemeProvider } from '../../ThemeContext';
 
+const LOCAL_STORAGE_KEY = 'todoApp.todos';
+
 export default function App() {
+  const [ todos, setTodos ] = useState([{
+    id: 0, name: 'you can complete or delete me', complete: false
+  }, 
+  {
+    id: 1, name: 'and me you can drag and reorder', complete: false
+  }])
+
+  const todoNameRef = useRef();
+
+  useEffect(() => {
+
+  }, [todos])
+
+  const addTodo = (event) => {
+    event.preventDefault();
+    const name = todoNameRef.current.value;
+    if(name === '') return;
+
+    setTodos(prevTodos => {
+      return [{id: uuid(), name: name, complete: false}, ...prevTodos]
+      
+    })
+
+    todoNameRef.current.value = null;
+  }
 
   return (
     <ThemeProvider>
       <div id="container">
         <Header />
         <main>
-          <AddTodoForm />
-          <Todos />
+          <AddTodoForm addTodo={addTodo} todoNameRef={todoNameRef} />
+          <TodoList todos={todos} />
           <TodosOptions />
         </main>
         <Footer />

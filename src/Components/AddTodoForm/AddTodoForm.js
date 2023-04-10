@@ -1,22 +1,24 @@
-import React from 'react'
-import './AddTodoForm.css'
+import React, { useRef } from 'react';
+import './AddTodoForm.css';
 import { useTheme } from '../../ThemeContext';
 
-export default function AddTodoForm() {
+export default function AddTodoForm({ addTodo, todoNameRef }) {
   const themeStyle = useTheme();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
 
-  }
 
   return (
-    <form onSubmit={handleSubmit}>
-      {/* add span with circle */}
+    <form onSubmit={addTodo}>
       <label className={themeStyle} htmlFor="input">
         <span className="circle"></span>
       </label>
-      <input className={themeStyle} type="text" name="input" placeholder='Create a new todo...'></input>
+      <input 
+        ref={todoNameRef}
+        className={themeStyle} 
+        type="text" 
+        name="input" 
+        placeholder='Create a new todo...'>
+      </input>
     </form>
   )
 }
