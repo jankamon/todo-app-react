@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './AddTodoForm.css';
 import { useTheme } from '../../ThemeContext';
 
@@ -16,7 +16,7 @@ export default function AddTodoForm({ addTodo, todoNameRef }) {
         ref={todoNameRef}
         className={themeStyle} 
         type="text" 
-        name="input" 
+        name="input"
         placeholder='Create a new todo...'>
       </input>
     </form>

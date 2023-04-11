@@ -44,13 +44,18 @@ export default function App() {
     todoNameRef.current.value = null;
   }
 
+  const removeTodo = (id) => {
+    const newTodos = todos.filter(todo => todo.id !== id)
+    setTodos(newTodos)
+  }
+
   return (
     <ThemeProvider>
       <div id="container">
         <Header />
         <main>
           <AddTodoForm addTodo={addTodo} todoNameRef={todoNameRef} />
-          <TodoList todos={todos} />
+          <TodoList todos={todos} removeTodo={removeTodo} />
           <TodosOptions />
         </main>
         <Footer />

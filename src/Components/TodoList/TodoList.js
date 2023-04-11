@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './TodoList.css';
 import Todo from '../Todo/Todo';
-import { useTheme } from '../../ThemeContext';
 
-export default function TodosList({ todos }) {
+export default function TodosList({ todos, removeTodo }) {
   
 
   return (
     <ul>
       {todos.map(todo => {
-        return <Todo todoName={todo.name} key={todo.id}/>
+        return <Todo todo={todo} key={todo.id} removeTodo={removeTodo}/>
       })}
     </ul>
   )
