@@ -2,7 +2,7 @@ import React from 'react';
 import './TodosOptions.css';
 import { useTheme } from '../../ThemeContext';
 
-export default function TodosOptions({ todos, clearCompleted }) {
+export default function TodosOptions({ todos, clearCompleted, showAll, showActive, showCompleted }) {
   const themeStyle = useTheme();
 
   return (
@@ -11,9 +11,9 @@ export default function TodosOptions({ todos, clearCompleted }) {
         {todos.filter(todo => !todo.complete).length} items left
       </div>
       <div id='filter-options'>
-        <div className={themeStyle} id='all'>All</div>
-        <div className={themeStyle} id='active'>Active</div>
-        <div className={themeStyle} id='completed'>Completed</div>
+        <div className={themeStyle} id='all' onClick={showAll}>All</div>
+        <div className={themeStyle} id='active' onClick={showActive}>Active</div>
+        <div className={themeStyle} id='completed' onClick={showCompleted}>Completed</div>
       </div>
       <div 
         className={themeStyle} 

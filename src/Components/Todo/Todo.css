@@ -55,3 +55,8 @@ span.remove-button {
     width: 0.75rem;
     background-image: url('./images/icon-cross.svg');
 }
+
+span.complete {
+    color: hsl(234, 11%, 52%);
+    text-decoration: line-through;
+}

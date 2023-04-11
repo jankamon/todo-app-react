@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Todo.css';
 import { useTheme } from '../../ThemeContext';
 
@@ -8,11 +8,12 @@ export default function Todo({ todo, removeTodo, toggleTodo }) {
     return (
         <li className={themeStyle}>
             <span 
-                onClick={() => toggleTodo(todo.id)}
+                onClick={() => toggleTodo(todo.id)
+                }
                 className="circle todo-button" >
                 <span className='inner-circle'></span>
             </span>
-            <span className='todo-text'>{todo.name}</span>
+            <span className={`todo-text + ${todo.complete ? 'complete' : ''}`}>{todo.name}</span>
             <span 
                 onClick={() => removeTodo(todo.id)}
                 className="remove-button">

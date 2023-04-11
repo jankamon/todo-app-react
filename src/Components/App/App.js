@@ -61,6 +61,18 @@ export default function App() {
     setTodos(newTodos)
   }
 
+  const showAll = () => {
+
+  }
+
+  const showActive = () => {
+    
+  }
+
+  const showCompleted  = () => {
+
+  }
+
   return (
     <ThemeProvider>
       <div id="container">
@@ -68,7 +80,13 @@ export default function App() {
         <main>
           <AddTodoForm addTodo={addTodo} todoNameRef={todoNameRef} />
           <TodoList todos={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} />
-          <TodosOptions todos={todos} clearCompleted={clearCompleted} />
+          <TodosOptions 
+            todos={todos} 
+            clearCompleted={clearCompleted} 
+            showAll={showAll}
+            showActive={showActive}
+            showCompleted={showCompleted}
+          />
         </main>
         <Footer />
       </div>
