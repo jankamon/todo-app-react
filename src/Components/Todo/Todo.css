@@ -27,6 +27,7 @@ li.light-theme {
 span.todo-button {
     margin-left: 5.3%;
     margin-right: 5.3%;
+    text-align: center;
 }
 
 li.dark-theme span.todo-button:hover {
@@ -56,7 +57,12 @@ span.remove-button {
     background-image: url('./images/icon-cross.svg');
 }
 
-span.complete {
+li.dark-theme span.complete {
     color: hsl(234, 11%, 52%);
     text-decoration: line-through;
+}
+
+li.dark-theme span.todo-button.complete {
+    background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+    border: 2px solid transparent;
 }
