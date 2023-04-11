@@ -5,7 +5,7 @@ import { useTheme, useThemeUpdate } from '../../ThemeContext';
 export default function Header() {
   const toggleTheme = useThemeUpdate();
   const themeStyle = useTheme();
-  
+
   // Toggle body class
   useEffect(() => {
     if(themeStyle === 'light-theme') {

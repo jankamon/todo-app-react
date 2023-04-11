@@ -49,14 +49,26 @@ export default function App() {
     setTodos(newTodos)
   }
 
+  const toggleTodo = (id) => {
+    const newTodos = [...todos];
+    const todo = newTodos.find(todo => todo.id === id);
+    todo.complete = !todo.complete;
+    setTodos(newTodos);
+  }
+
+  const clearCompleted = () => {
+    const newTodos = todos.filter(todo => todo.complete === false)
+    setTodos(newTodos)
+  }
+
   return (
     <ThemeProvider>
       <div id="container">
         <Header />
         <main>
           <AddTodoForm addTodo={addTodo} todoNameRef={todoNameRef} />
-          <TodoList todos={todos} removeTodo={removeTodo} />
-          <TodosOptions />
+          <TodoList todos={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} />
+          <TodosOptions todos={todos} clearCompleted={clearCompleted} />
         </main>
         <Footer />
       </div>
