@@ -1,70 +1,72 @@
 div#todos-options {
-    width: 100%;
-    height: 45px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 0.85rem;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-size: 0.75rem;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.85rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 0.75rem;
 }
 
 div#todos-options.dark-theme {
-    color: hsl(234, 11%, 52%);
-    background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 11%, 52%);
+  background-color: hsl(235, 24%, 19%);
 }
 
 div#todos-options.light-theme {
-    color: hsl(234, 11%, 52%);
-    background-color: hsl(0, 0%, 98%);
+  color: hsl(234, 11%, 52%);
+  background-color: hsl(0, 0%, 98%);
 }
 
 div#items-left {
-    cursor: default;
+  cursor: default;
 }
-
 
 div#filter-options {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
-    width: 34%;
-    font-weight: 700;
-    margin-left: 5%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 34%;
+  font-weight: 700;
+  margin-left: 5%;
 }
 
-#all, #active, #completed, #clear-completed {
-    cursor: pointer;
+#all,
+#active,
+#completed,
+#clear-completed {
+  cursor: pointer;
 }
 
-div#all.dark-theme, 
-div#active.dark-theme, 
+div#all.dark-theme,
+div#active.dark-theme,
 div#completed.dark-theme,
 div#clear-completed.dark-theme {
-    color: inherit;
+  color: inherit;
 }
 
-div#all.dark-theme:hover, 
-div#active.dark-theme:hover, 
+div#all.dark-theme:hover,
+div#active.dark-theme:hover,
 div#completed.dark-theme:hover,
 div#clear-completed.dark-theme:hover {
-    color: hsl(236, 33%, 92%);
+  color: hsl(236, 33%, 92%);
 }
 
-div#all.light-theme, 
-div#active.light-theme, 
+div#all.light-theme,
+div#active.light-theme,
 div#completed.light-theme,
 div#clear-completed.light-theme {
-    color: inherit;
+  color: inherit;
 }
 
-div#all.light-theme:hover, 
-div#active.light-theme:hover, 
+div#all.light-theme:hover,
+div#active.light-theme:hover,
 div#completed.light-theme:hover,
 div#clear-completed.light-theme:hover {
-    color: hsl(235, 19%, 35%);
+  color: hsl(235, 19%, 35%);
 }

@@ -1,60 +1,61 @@
 form {
-    display: flex;
+  display: flex;
 }
 
 input {
-    font-family: inherit;
-    font-weight: 400;
-    box-sizing: border-box;
-    width: 85%;
-    height: 60px;
-    border: none;
-    border-radius: 5px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 85%;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: 1rem;
+  padding-right: 25px;
 }
 
 input:focus {
-    outline-style: none;
+  outline-style: none;
 }
 
 input.dark-theme {
-    color: hsl(234, 39%, 85%);
-    background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 24%, 19%);
 }
 
 input.light-theme {
-    color: hsl(235, 19%, 35%);
-    background-color: hsl(0, 0%, 98%);
+  color: hsl(235, 19%, 35%);
+  background-color: hsl(0, 0%, 98%);
 }
 
 label {
-    box-sizing: border-box;
-    width: 15%;
-    height: 60px;
-    border: none;
-    border-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
+  box-sizing: border-box;
+  width: 15%;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 label.dark-theme {
-    background-color: hsl(235, 24%, 19%);
+  background-color: hsl(235, 24%, 19%);
 }
 
 label.light-theme {
-    background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 98%);
 }
 
 span.circle {
-    height: 1rem;
-    width: 1rem;
-    border: 2px solid hsl(235, 19%, 35%);
-    border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  border: 2px solid hsl(235, 19%, 35%);
+  border-radius: 50%;
 }
